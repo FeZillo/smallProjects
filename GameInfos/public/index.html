@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogos</title>
+
+    <!-- FAVICON -->
+    <link rel="icon" href="assets/favicon-32x32.png" type="image/x-icon">
+
+    <!-- BOOTSTRAP LOADING -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap5-toggle@5.0.4/css/bootstrap5-toggle.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap5-toggle@5.0.4/js/bootstrap5-toggle.ecmas.min.js" defer></script>
+
+    <!-- CSS LOADING -->
+    <link type="text/css" rel="stylesheet" href="./styles/main.css">
+    <link type="text/css" rel="stylesheet" href="./styles/normalize.css">
+    
+    <!-- JS LOADING -->
+    <script src="styles/script.js" defer></script>
+</head>
+<body>
+    <div class="container mt-4" id="navbar">
+        <input id="darkModeCheckbox" type="checkbox" data-toggle="toggle" data-onstyle="dark" data-offstyle="danger" data-onlabel="Dark Mode" data-offlabel="Light Mode" onchange="changeTheme();" checked="false">
+    </div>
+
+
+    <div class="container justify-content-center d-flex mt-5"> <!-- Container -->
+        <div class="row"> <!-- Row -->
+            <div class="col-md-6 col-sm-12 mb-5"> <!-- Col -->
+                <div class="gameCards card ml-3 mr-3" style="width: 19rem; min-height: 300px;"> <!-- Card -->
+                    <img class="card-img-top imgcard" src="./assets/valorant.jpeg"> 
+                    <div class="card-body"> <!-- Card Body -->
+                        <h5 class="card-title">Valorant</h5>
+                        <a href="jogos/valorant.html" class="btn btn-dark mt-4 btn-block botao">Ver Informações</a> <!-- BOTAO -->
+                    </div> <!-- /fim card body-->
+                </div> <!-- /fim card -->
+            </div> <!-- /fim col -->
+
+            <div class="col-md-6 col-sm-12 mb-5">
+                <div class="gameCards card ml-3 mr-3" style="width: 19rem; min-height: 300px;"> <!-- Card -->
+                    <img class="card-img-top imgcard" src="./assets/dota.jpg"> 
+                    <div class="card-body"> <!-- Card Body -->
+                        <h5 class="card-title">Dota 2</h5>
+                        <a href="jogos/dota.html" class="btn btn-dark mt-4 btn-block botao">Ver Informações</a> <!-- BOTAO -->
+                    </div> <!-- /fim card body-->
+                </div> <!-- /fim card -->
+            </div> <!-- /fim col -->
+            
+        </div> <!-- /fim row -->
+    </div> <!-- /fim container -->
+</body>
+</html>
