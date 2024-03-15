@@ -1,14 +1,23 @@
-const express = require("express");
-const app = express();
+const express = require('express');
+const bodyParser = require('body-parser');
+const cors = require('cors');
 const path = require('path');
-const port = 5500;
 
-app.use(express.static(path.join(__dirname, '../public')));
+const app = express();
 
+// Middleware
+app.use(bodyParser.json());
+app.use(cors());
+app.use(express.static(path.join(__dirname)));
+
+// Serve the index.html file for the root route
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '../public/index.html'));
+  res.sendFile(__dirname + '/index.html');
 });
 
+// Server activation
+const port = 3000;
 app.listen(port, () => {
-    console.log(`Server is running at http://localhost:${port}`);
+  console.debug(`Server listening on port ${port}`);
 });
+
